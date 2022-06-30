@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Secret Friend</title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Rochester&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Besley&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+
+  <!-- Style -->
+  <link rel="stylesheet" href="./assets/style/bootstrap.css">
+  <link rel="stylesheet" href="./assets/style/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/style/style.css">
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <!-- ***** Navbar ***** -->
+
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">My Secret Friend</a> <img src="./assets/images/letter.png" alt="letter"
+        width="40" height="40">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+        id="navbar-toggler-buttom">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#de-que-se-trata">¿Qué es My Secret Friend?</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#members">Participantes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#cuestionario">Cuestionario</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <!-- <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li> -->
+
+        </ul>
+
+      </div>
+      <img src="./assets/images/calendar-01.png" alt="calendar" width="40" height="40"> &nbsp;&nbsp;&nbsp;
+      <span id="spanDate">today</span>
+    </div>
+  </nav>
+  <!-- ***** End Navbar ***** -->
+
+  <!-- ***** Header ***** -->
+  <header>
+    <h1 class="header-main-text">
+      My Secret Friend
+      <img src="./assets/images/letter.png" alt="letter" width="70" height="70">
+    </h1>
+    <hr>
+    <p class="header-sub-text">
+      <i class="bx bxs-quote-alt-left bx-tada bx-md"></i>
+      La amistad es un alma que habita en dos cuerpos <br>
+      y un corazón que habita en dos almas
+      <i class="bx bxs-quote-alt-right bx-tada bx-md"></i>
+    </p>
+  </header>
+  <!-- ***** End Header ***** -->
+
+  <!-- ***** Section: What is My Secret Friend ***** -->
+  <section>
+    <div class="container">
+      <div class="title-section" id="de-que-se-trata">
+        <h2> <strong> ¿De qué se trata <div class="my-brand"> My Secret Friend</div>?</strong></h2>
+      </div>
+
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="card-container">
+              <div class="float-layout">
+                <div class="card-image">
+                  <img src="./assets/images/friends-09.png">
+                  <div class="card" id="card-text-01">
+                    <div class="card-title">¿Jugamos a <div class="my-brand">My Secret Friend</div>?</div>
+                    <div class="card-desc">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ullamcorper
+                      mollis tempus. Mauris eu maximus lectus, eu auctor justo. Aenean porta purus
+                      vel commodo consequat.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card-container">
+              <div class="float-layout">
+                <div class="card-image">
+                  <img src="./assets/images/friends-13.png">
+                  <div class="card" id="card-text-02">
+                    <div class="card-title">Title</div>
+                    <div class="card-desc">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ullamcorper
+                      mollis tempus. Mauris eu maximus lectus, eu auctor justo. Aenean porta purus
+                      vel commodo consequat.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card-container">
+              <div class="float-layout">
+                <div class="card-image">
+                  <img src="./assets/images/friends-12.png">
+                  <div class="card" id="card-text-03">
+                    <div class="card-title">Title</div>
+                    <div class="card-desc">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ullamcorper
+                      mollis tempus. Mauris eu maximus lectus, eu auctor justo. Aenean porta purus
+                      vel commodo consequat.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+
+      </div>
+    </div>
+  </section>
+  <!-- ***** End Section ***** -->
+
+
+
+  <!-- ***** Section: Participants ***** -->
+  <section id="members">
+    <div class="container">
+      <div class="title-section">
+        <h2> <strong>Participantes de <div class="my-brand"> My Secret Friend</div></strong></h2>
+        <p>Gracias a Estoy Creciendo, estas mamis se conocieron <br>
+          y forman un grupo de oro .
+        </p>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="row1-container">
+            <div class="box pink">
+              <img class="member-pic" src="./assets/images/participants/carina.png">
+              <p class="member-names">Carina</p>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+
+            <div class="box pink">
+              <img class="member-pic" src="./assets/images/participants/laura.png">
+              <p class="member-names">Laura</p>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+
+            <div class="box pink">
+              <img class="member-pic" src="./assets/images/participants/luisina.png">
+              <p class="member-names">Luisina</p>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="row1-container">
+            <div class="box pink">
+              <img class="member-pic" src="./assets/images/participants/melina.png">
+              <p class="member-names">Melina</p>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+
+            <div class="box pink">
+              <img class="member-pic" src="./assets/images/participants/melisa.png">
+              <p class="member-names">Melisa</p>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+
+            <div class="box pink">
+              <img class="member-pic" src="./assets/images/participants/nancy.png">
+              <p class="member-names">Nancy</p>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="row1-container">
+            <div class="box pink">
+              <img class="member-pic" src="./assets/images/participants/paola.png">
+              <p class="member-names">Paola</p>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+
+            <div class="box pink">
+              <img class="member-pic" src="./assets/images/participants/tania.png">
+              <p class="member-names">Tania</p>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+
+            <div class="box pink">
+              <img class="member-pic" src="./assets/images/participants/silvia.png">
+              <p class="member-names">Silvia</p>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- ***** End Participants ***** -->
+
+  <!-- ***** Form ***** -->
+  <section>
+    <div class="container mt-5" id="vacio">
+      <div class="title-section" id="cuestionario">
+        <h2> <strong>Cuestionario <div class="my-brand"> My Secret Friend</div></strong></h2>
+      </div>
+
+      <div class="row d-flex justify-content-center align-items-center">
+        <div class="col-md-8">
+          <form id="regForm">
+            <h5 id="register">¿Respondemos unas simples preguntas?</h5>
+            <div class="all-steps" id="all-steps">
+              <span class="step"><i class="fas fa-heart"></i></span>
+              <span class="step"><i class="fas fa-coffee"></i></span>
+              <span class="step"><i class="fas fa-umbrella-beach"></i></span>
+              <span class="step"><i class="fas fa-cheese"></i></span>
+              <span class="step"><i class="fas fa-hotdog"></i></span>
+              <span class="step"><i class="fas fa-hamburger"></i></span>
+              <span class="step"><i class="fas fa-tv"></i></span>
+              <span class="step"><i class="fas fa-utensils"></i></span>
+              <span class="step"><i class="fas fa-birthday-cake"></i></span>
+              <span class="step"><i class="fas fa-concierge-bell"></i></span>
+              <span class="step"><i class="fas fa-car-side"></i></span>
+            </div>
+
+            <div class="tab">
+              <h6 class="form-question">¿Cuál es tu nombre?</h6>
+              <table class="table">
+                <tr>
+                  <td>
+                    <input type="radio" class="form-check-input" id="carina" name="nombre" />
+                    <label class="form-check-label" for="carina"><span class="underline">Carina</span></label>
+                  </td>
+                  <td>
+                    <input type="radio" class="form-check-input" id="laura" name="nombre" />
+                    <label class="form-check-label" for="laura"><span class="underline">Laura</span></label>
+                  </td>
+                  <td>
+                    <input type="radio" class="form-check-input" id="luisina" name="nombre" />
+                    <label class="form-check-label" for="luisina"><span class="underline">Luisina</span></label>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <input type="radio" class="form-check-input" id="melina" name="nombre" />
+                    <label class="form-check-label" for="melina"><span class="underline">Melina</span></label>
+                  </td>
+                  <td>
+                    <input type="radio" class="form-check-input" id="melisa" name="nombre" />
+                    <label class="form-check-label" for="melisa"><span class="underline">Melisa</span></label>
+                  </td>
+                  <td>
+                    <input type="radio" class="form-check-input" id="nancy" name="nombre" />
+                    <label class="form-check-label" for="nancy"><span class="underline">Nancy</span></label>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <input type="radio" class="form-check-input" id="paola" name="nombre" />
+                    <label class="form-check-label" for="paola"><span class="underline">Paola</span></label>
+                  </td>
+                  <td>
+                    <input type="radio" class="form-check-input" id="tania" name="nombre" />
+                    <label class="form-check-label" for="tania"><span class="underline">Tania</span></label>
+                  </td>
+                  <td>
+                    <input type="radio" class="form-check-input" id="silvia" name="nombre" />
+                    <label class="form-check-label" for="silvia"><span class="underline">Silvia</span></label>
+                  </td>
+                </tr>
+
+              </table>
+            </div>
+
+            <div class="tab">
+              <h6 class="form-question">¿Mate dulce o mate amargo?</h6>
+              <table class="table">
+                <tr>
+                  <td>
+                    <input type="radio" class="form-check-input" id="mate-dulce" name="mate" />
+                    <label class="form-check-label" for="mate-dulce">¡Dulce! (como yo)</label>
+                  </td>
+                  <td>
+                    <input type="radio" class="form-check-input" id="mate-amargo" name="mate" />
+                    <label class="form-check-label" for="mate-amargo">¡Amargo, como corresponde! </label>
+                  </td>
+                </tr>
+              </table>
+            </div>
+
+            <div class="tab">
+              <h6 class="form-question">¿Team verano o team invierno?</h6>
+              <table class="table">
+                <tr>
+                  <td>
+                    <input type="radio" class="form-check-input" id="verano" name="estacion" />
+                    <label class="form-check-label" for="verano">Verano, obviamente.</label>
+                  </td>
+                  <td>
+                    <input type="radio" class="form-check-input" id="invierno" name="estacion" />
+                    <label class="form-check-label" for="invierno">Invierno for ever.</label>
+                  </td>
+                </tr>
+              </table>
+            </div>
+
+            <div class="tab">
+              <h6 class="form-question">¿Team dulce o team salado?</h6>
+              <table class="table">
+                <tr>
+                  <td>
+                    <input type="radio" class="form-check-input" id="dulce" name="dulce-salado" />
+                    <label class="form-check-label" for="dulce" ¡>Dulce, y empalagoso!</label>
+                  </td>
+                  <td>
+                    <input type="radio" class="form-check-input" id="salado" name="dulce-salado" />
+                    <label class="form-check-label" for="salado">Salado y abundante.</label>
+                  </td>
+                </tr>
+              </table>
+            </div>
+
+            <div class="tab">
+              <h6 class="form-question">¿Chorizo o morcilla?</h6>
+              <table class="table">
+                <tr>
+                  <td>
+                    <input type="radio" class="form-check-input" id="chorizo" name="chori-morci" />
+                    <label class="form-check-label" for="chorizo">Chorizo. Infaltable en todo asado.</label>
+                  </td>
+                  <td>
+                    <input type="radio" class="form-check-input" id="morcilla" name="chori-morci" />
+                    <label class="form-check-label" for="morcilla">Morcilla. Sin más que agregar.</label>
+                  </td>
+                </tr>
+              </table>
+            </div>
+
+            <div class="tab">
+              <h6 class="form-question">¿Pizza o hamburguesas?</h6>
+              <table class="table">
+                <tr>
+                  <td>
+                    <input type="radio" class="form-check-input" id="pizza" name="pizza-burger" />
+                    <label class="form-check-label" for="pizza">Pizza, y con mucho queso.</label>
+                  </td>
+                  <td>
+                    <input type="radio" class="form-check-input" id="hamburguesa" name="pizza-burger" />
+                    <label class="form-check-label" for="hamburguesa">Hamburguesa, completita completita.</label>
+                  </td>
+                </tr>
+              </table>
+            </div>
+
+            <div class="tab">
+              <h6 class="form-question">¿Cine o Netflix?</h6>
+              <table class="table">
+                <tr>
+                  <td>
+                    <input type="radio" class="form-check-input" id="cine" name="cine-net" />
+                    <label class="form-check-label" for="cine">Cine, y con pochoclos.</label>
+                  </td>
+                  <td>
+                    <input type="radio" class="form-check-input" id="netflix" name="cine-net" />
+                    <label class="form-check-label" for="netflix">Netflix, en la comodiad del living.</label>
+                  </td>
+                </tr>
+              </table>
+            </div>
+
+            <div class="tab">
+              <h6 class="form-question">¿Cocinar o lavar los platos?</h6>
+              <table class="table">
+                <tr>
+                  <td>
+                    <input type="radio" class="form-check-input" id="cocinar" name="lavar-cocinar" />
+                    <label class="form-check-label" for="cocinar">¡Cocinar! Prefiero mi comida.</label>
+                  </td>
+                  <td>
+                    <input type="radio" class="form-check-input" id="lavar" name="lavar-cocinar" />
+                    <label class="form-check-label" for="lavar">Lavar los platos. </label>
+                  </td>
+                </tr>
+              </table>
+            </div>
+
+            <div class="tab">
+              <h6 class="form-question">Pasta frola: ¿Batata o membrillo?</h6>
+              <table class="table">
+                <tr>
+                  <td>
+                    <input type="radio" class="form-check-input" id="batata" name="frola" />
+                    <label class="form-check-label" for="batata">¡Batata! Nada que discutir.</label>
+                  </td>
+                  <td>
+                    <input type="radio" class="form-check-input" id="membrillo" name="frola" />
+                    <label class="form-check-label" for="membrillo">¡Membrillo! Lo demás es invento.</label>
+                  </td>
+                </tr>
+              </table>
+            </div>
+
+            <div class="tab">
+              <h6 class="form-question">Domingos de ¿pastas o asado?</h6>
+              <table class="table">
+                <tr>
+                  <td>
+                    <input type="radio" class="form-check-input" id="pastas" name="domingos" />
+                    <label class="form-check-label" for="pastas">Pastas, como los de la nona.</label>
+                  </td>
+                  <td>
+                    <input type="radio" class="form-check-input" id="asado" name="domingos" />
+                    <label class="form-check-label" for="asado">Asado, y una buena previa.</label>
+                  </td>
+                </tr>
+              </table>
+            </div>
+
+            <div class="tab">
+              <h6 class="form-question">¿Cars o Toy Story?</h6>
+              <table class="table">
+                <tr>
+                  <td>
+                    <input type="radio" class="form-check-input" id="cars" name="pelicula" />
+                    <label class="form-check-label" for="cars">Cars ¡Ka Chow!</label>
+                  </td>
+                  <td>
+                    <input type="radio" class="form-check-input" id="toy-story" name="pelicula" />
+                    <label class="form-check-label" for="toy-story">Toy Story ¡Hasta el infinito y más allá!</label>
+                  </td>
+                </tr>
+              </table>
+            </div>
+
+            <!--             
+            <div class="thanks-message text-center" id="text-message">
+              <h3>¡Muchas gracias por participar!</h3>
+              <p>Esperamos que te hayas divertido.</p>
+              <p>It helps us to improve our services!</p>
+            </div> -->
+
+            <!-- En esta parte, hacer que el id que se llama vacio y está en la línea 268 se desaparezca con un style="display:none;" -->
+
+            <div style="overflow:auto;" id="nextprevious">
+              <div style="float:right;">
+                <button type="button" id="prevBtn" class="prevNextBtn" onclick="nextPrev(-1)"><i
+                    class="fa fa-angle-double-left"></i></button>
+                <button type="button" id="nextBtn" class="prevNextBtn" onclick="nextPrev(1)"><i
+                    class="fa fa-angle-double-right"></i></button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="container mt-5">
+      <div class="row d-flex justify-content-center align-items-center">
+        <div class="col-md-8">
+          <form id="regForm1">
+            <div class="thanks-message text-center" id="text-message">
+              <h3>¡Muchas gracias por participar!</h3>
+              <p>Esperamos que te hayas divertido.</p>
+              <p>It helps us to improve our services!</p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- ***** End Form ***** -->
+
+  <!-- ***** Footer *****-->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright text-center">
+        &copy; Copyright 2021-2022 |
+        <strong><span>Silvia Otaka</span></strong> | Programming with ❤ <br />
+      </div>
+    </div>
+  </footer>
+  <!-- ***** End Footer ***** -->
+
+
+  <!-- ***** JS Scripts ***** -->
+  <script src="./assets/js/bootstrap.min.js"></script>
+  <script src="./assets/js/bootstrap.bundle.js"></script>
+  <script src="./assets/js/previous-next.js"></script>
+  <script src="./assets/js/todayDate.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous">
+    </script>
+
+
+</body>
+
+</html>
