@@ -17,7 +17,6 @@
 
   <!-- Style -->
   <link rel="stylesheet" href="./assets/style/bootstrap.css">
-  <link rel="stylesheet" href="./assets/style/bootstrap.min.css">
   <link rel="stylesheet" href="./assets/style/style.css">
   <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
@@ -52,7 +51,7 @@
             <a class="nav-link" href="#cuestionario">Cuestionario</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="./form-participants.html">Formulario Participantes</a>
           </li>
           <!-- <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -81,18 +80,19 @@
       My Secret Friend
       <img src="./assets/images/letter.png" alt="letter" width="70" height="70">
     </h1>
-    <hr>
+    <hr class="yellow-line">
     <p class="header-sub-text">
       <i class="bx bxs-quote-alt-left bx-tada bx-md"></i>
-      La amistad es un alma que habita en dos cuerpos <br>
+      La amistad es un alma que habita en dos cuerpos, <br>
       y un corazón que habita en dos almas
       <i class="bx bxs-quote-alt-right bx-tada bx-md"></i>
     </p>
+
   </header>
   <!-- ***** End Header ***** -->
 
   <!-- ***** Section: What is My Secret Friend ***** -->
-  <section>
+  <section class="bg-yellow-light">
     <div class="container">
       <div class="title-section" id="de-que-se-trata">
         <h2> <strong> ¿De qué se trata <div class="my-brand"> My Secret Friend</div>?</strong></h2>
@@ -114,13 +114,14 @@
             <div class="card-container">
               <div class="float-layout">
                 <div class="card-image">
-                  <img src="./assets/images/friends-09.png">
+                  <img class="img-fluid" src="./assets/images/friends-09.png">
                   <div class="card" id="card-text-01">
                     <div class="card-title">¿Jugamos a <div class="my-brand">My Secret Friend</div>?</div>
                     <div class="card-desc">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ullamcorper
-                      mollis tempus. Mauris eu maximus lectus, eu auctor justo. Aenean porta purus
-                      vel commodo consequat.
+                      <p>En Venezuela, a finales de 1800, estaba mal visto que las mujeres casadas o comprometidas
+                        tengan amigos, entonces, armaron una reunión e inventaron un particular juego: cada asistente
+                        debía sacar un papelito con un nombre al azar y hacerle un regalo a esa persona sin que sepa
+                        quién fue el destinatario.</p>
                     </div>
                   </div>
                 </div>
@@ -133,11 +134,11 @@
                 <div class="card-image">
                   <img src="./assets/images/friends-13.png">
                   <div class="card" id="card-text-02">
-                    <div class="card-title">Title</div>
+                    <div class="card-title">¿Cuándo termina el misterio?</div>
                     <div class="card-desc">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ullamcorper
-                      mollis tempus. Mauris eu maximus lectus, eu auctor justo. Aenean porta purus
-                      vel commodo consequat.
+                      <p>En este intercambio de regalos vas a hacer uno, buscando el obsequio ideal para quien te tocó,
+                        y vas a recibir otro de tu amigo invisible pero ¿quién es? ¡Misterio! Esto se develará cuando
+                        finalice el juego.</p>
                     </div>
                   </div>
                 </div>
@@ -150,11 +151,11 @@
                 <div class="card-image">
                   <img src="./assets/images/friends-12.png">
                   <div class="card" id="card-text-03">
-                    <div class="card-title">Title</div>
+                    <div class="card-title">¡Que empice el juego!</div>
                     <div class="card-desc">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ullamcorper
-                      mollis tempus. Mauris eu maximus lectus, eu auctor justo. Aenean porta purus
-                      vel commodo consequat.
+                      <p>Haciendo click en la tarjeta con tu nombre, el azar te va a decir quién es tu amigo invisible
+                        al que deberás hacerle un regalo y manenter el secreto. ¡A jugar!</p>
+
                     </div>
                   </div>
                 </div>
@@ -176,37 +177,97 @@
 
       </div>
     </div>
+    <div class="btn-listar">
+      <a href="./form-participants.html">
+        <button type="button" class="btn btn-info" id="btn-participantes">Ingresar Participantes</button>
+      </a>
+    </div>
   </section>
   <!-- ***** End Section ***** -->
 
 
 
   <!-- ***** Section: Participants ***** -->
-  <section id="members">
+  <section class="bg-cyan">
     <div class="container">
       <div class="title-section">
         <h2> <strong>Participantes de <div class="my-brand"> My Secret Friend</div></strong></h2>
-        <p>Gracias a Estoy Creciendo, estas mamis se conocieron <br>
-          y forman un grupo de oro .
-        </p>
+        <h5>Las mamis de EstoyCre</h5>
       </div>
 
+      <!-- First row -->
       <div class="container">
         <div class="row">
           <div class="row1-container">
-            <div class="box pink">
+
+            <!-- Participant 1 -->
+            <div class="box pink" data-toggle="modal" data-target="#exampleModal">
               <img class="member-pic" src="./assets/images/participants/carina.png">
               <p class="member-names">Carina</p>
               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
             </div>
+            <!-- Modal 1 -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content bg-yellow-light">
 
-            <div class="box pink">
+                  <div class="modal-header">
+                    <h3 class="modal-title">
+                      ¡Bienvenida <div class="my-brand">Cari</div>!
+                    </h3>
+                  </div>
+
+                  <div class="modal-body">
+                    <h5>¡Estás a punto de conocer a tu <div class="my-brand">Secret Friend</div>!</h5>
+                    <h6> ¿Estás lista? ¡Claro que sí! <br> Entoncés haz click en el botón y el misterio se develará.
+                    </h6>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-info"><a href="mailto:srotaka@gmail.com" target="_blank">Enviar
+                        email</a></button>
+                    <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Fin Modal 1 -->
+
+            <!-- Participant 2-->
+            <div class="box pink" data-toggle="modal" data-target="#exampleModal2">
               <img class="member-pic" src="./assets/images/participants/laura.png">
               <p class="member-names">Laura</p>
               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
             </div>
 
-            <div class="box pink">
+            <!-- Modal 2 -->
+            <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h3 class="modal-title" id="exampleModalLabel">
+                      ¡Bienvenida <div class="my-brand">Lau</div>!
+                    </h3>
+                  </div>
+
+                  <div class="modal-body">
+                    <h5>¡Estás a punto de conocer a tu <div class="my-brand">Secret Friend</div>!</h5>
+                    <h6> ¿Estás lista? ¡Claro que sí! <br> Entoncés haz click en el botón y el misterio se develará.
+                    </h6>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-info"><a href="mailto:srotaka@gmail.com" target="_blank">Enviar
+                        email</a></button>
+                    <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Fin Modal 2 -->
+
+            <!-- Participant 3 -->
+            <div class="box pink" data-toggle="modal" data-target="#exampleModal3">
               <img class="member-pic" src="./assets/images/participants/luisina.png">
               <p class="member-names">Luisina</p>
               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
@@ -214,21 +275,104 @@
           </div>
         </div>
 
+        <!-- Modal 3 -->
+        <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class="modal-title" id="exampleModalLabel">
+                  ¡Bienvenida <div class="my-brand">Luisi</div>!
+                </h3>
+              </div>
+
+              <div class="modal-body">
+                <h5>¡Estás a punto de conocer a tu <div class="my-brand">Secret Friend</div>!</h5>
+                <h6> ¿Estás lista? ¡Claro que sí! <br> Entoncés haz click en el botón y el misterio se develará.
+                </h6>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-info"><a href="mailto:srotaka@gmail.com" target="_blank">Enviar
+                    email</a></button>
+                <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Fin Modal 3 -->
+
+        <!-- Second row -->
         <div class="row">
           <div class="row1-container">
-            <div class="box pink">
+
+            <!-- Participant 4 -->
+            <div class="box pink" data-toggle="modal" data-target="#exampleModal4">
               <img class="member-pic" src="./assets/images/participants/melina.png">
               <p class="member-names">Melina</p>
               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
             </div>
 
-            <div class="box pink">
+            <!-- Modal 4 -->
+            <div class="modal fade" id="exampleModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h3 class="modal-title" id="exampleModalLabel">
+                      ¡Bienvenida <div class="my-brand">Meli</div>!
+                    </h3>
+                  </div>
+
+                  <div class="modal-body">
+                    <h5>¡Estás a punto de conocer a tu <div class="my-brand">Secret Friend</div>!</h5>
+                    <h6> ¿Estás lista? ¡Claro que sí! <br> Entoncés haz click en el botón y el misterio se develará.
+                    </h6>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-info"><a href="mailto:srotaka@gmail.com" target="_blank">Enviar
+                        email</a></button>
+                    <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Fin Modal 4 -->
+
+            <!-- Participant 5 -->
+            <div class="box pink" data-toggle="modal" data-target="#exampleModal5">
               <img class="member-pic" src="./assets/images/participants/melisa.png">
               <p class="member-names">Melisa</p>
               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
             </div>
 
-            <div class="box pink">
+            <!-- Modal 5 -->
+            <div class="modal fade" id="exampleModal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h3 class="modal-title" id="exampleModalLabel">
+                      ¡Bienvenida <div class="my-brand">Meli</div>!
+                    </h3>
+                  </div>
+
+                  <div class="modal-body">
+                    <h5>¡Estás a punto de conocer a tu <div class="my-brand">Secret Friend</div>!</h5>
+                    <h6> ¿Estás lista? ¡Claro que sí! <br> Entoncés haz click en el botón y el misterio se develará.
+                    </h6>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-info"><a href="mailto:srotaka@gmail.com" target="_blank">Enviar
+                        email</a></button>
+                    <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Fin Modal 5 -->
+
+            <!-- Participant 6 -->
+            <div class="box pink" data-toggle="modal" data-target="#exampleModal6">
               <img class="member-pic" src="./assets/images/participants/nancy.png">
               <p class="member-names">Nancy</p>
               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
@@ -236,27 +380,135 @@
           </div>
         </div>
 
+        <!-- Modal 6 -->
+        <div class="modal fade" id="exampleModal6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class="modal-title" id="exampleModalLabel">
+                  ¡Bienvenida <div class="my-brand">Nan</div>!
+                </h3>
+              </div>
+
+              <div class="modal-body">
+                <h5>¡Estás a punto de conocer a tu <div class="my-brand">Secret Friend</div>!</h5>
+                <h6> ¿Estás lista? ¡Claro que sí! <br> Entoncés haz click en el botón y el misterio se develará.
+                </h6>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-info"><a href="mailto:srotaka@gmail.com" target="_blank">Enviar
+                    email</a></button>
+                <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Fin Modal 6 -->
+
+        <!-- Third row -->
         <div class="row">
           <div class="row1-container">
-            <div class="box pink">
+
+            <!-- Participant 7 -->
+            <div class="box pink" data-toggle="modal" data-target="#exampleModal7">
               <img class="member-pic" src="./assets/images/participants/paola.png">
               <p class="member-names">Paola</p>
               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
             </div>
 
-            <div class="box pink">
+            <!-- Modal 7 -->
+            <div class="modal fade" id="exampleModal7" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h3 class="modal-title" id="exampleModalLabel">
+                      ¡Bienvenida <div class="my-brand">Pao</div>!
+                    </h3>
+                  </div>
+
+                  <div class="modal-body">
+                    <h5>¡Estás a punto de conocer a tu <div class="my-brand">Secret Friend</div>!</h5>
+                    <h6> ¿Estás lista? ¡Claro que sí! <br> Entoncés haz click en el botón y el misterio se develará.
+                    </h6>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-info"><a href="mailto:srotaka@gmail.com" target="_blank">Enviar
+                        email</a></button>
+                    <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Fin Modal 7 -->
+
+            <!-- Participant 8 -->
+            <div class="box pink" data-toggle="modal" data-target="#exampleModal8">
               <img class="member-pic" src="./assets/images/participants/tania.png">
               <p class="member-names">Tania</p>
               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
             </div>
 
-            <div class="box pink">
+            <!-- Modal 8 -->
+            <div class="modal fade" id="exampleModal8" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h3 class="modal-title" id="exampleModalLabel">
+                      ¡Bienvenida <div class="my-brand">Ta</div>!
+                    </h3>
+                  </div>
+
+                  <div class="modal-body">
+                    <h5>¡Estás a punto de conocer a tu <div class="my-brand">Secret Friend</div>!</h5>
+                    <h6> ¿Estás lista? ¡Claro que sí! <br> Entoncés haz click en el botón y el misterio se develará.
+                    </h6>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-info"><a href="mailto:srotaka@gmail.com" target="_blank">Enviar
+                        email</a></button>
+                    <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Fin Modal 8 -->
+
+            <!-- Participant 9 -->
+            <div class="box pink" data-toggle="modal" data-target="#exampleModal9">
               <img class="member-pic" src="./assets/images/participants/silvia.png">
               <p class="member-names">Silvia</p>
               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
             </div>
           </div>
         </div>
+        <!-- Modal 9 -->
+        <div class="modal fade" id="exampleModal9" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class="modal-title" id="exampleModalLabel">
+                  ¡Bienvenida <div class="my-brand">Sil</div>!
+                </h3>
+              </div>
+
+              <div class="modal-body">
+                <h5>¡Estás a punto de conocer a tu <div class="my-brand">Secret Friend</div>!</h5>
+                <h6> ¿Estás lista? ¡Claro que sí! <br> Entoncés haz click en el botón y el misterio se develará.
+                </h6>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-info"><a href="mailto:srotaka@gmail.com" target="_blank">Enviar
+                    email</a></button>
+                <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Fin Modal 9 -->
 
       </div>
     </div>
@@ -264,10 +516,11 @@
   <!-- ***** End Participants ***** -->
 
   <!-- ***** Form ***** -->
-  <section>
+  <section class="bg-yellow-light">
     <div class="container mt-5" id="vacio">
       <div class="title-section" id="cuestionario">
         <h2> <strong>Cuestionario <div class="my-brand"> My Secret Friend</div></strong></h2>
+        <p>¡Conozcámonos un poco más!</p>
       </div>
 
       <div class="row d-flex justify-content-center align-items-center">
@@ -499,12 +752,12 @@
               </table>
             </div>
 
-            <!--             
+
             <div class="thanks-message text-center" id="text-message">
               <h3>¡Muchas gracias por participar!</h3>
-              <p>Esperamos que te hayas divertido.</p>
-              <p>It helps us to improve our services!</p>
-            </div> -->
+              <p>¡Espero que te hayas divertido</p>
+              <p> tanto como yo!</p>
+            </div>
 
             <!-- En esta parte, hacer que el id que se llama vacio y está en la línea 268 se desaparezca con un style="display:none;" -->
 
@@ -519,26 +772,108 @@
           </form>
         </div>
       </div>
-    </div>
-
-
-
-    <div class="container mt-5">
-      <div class="row d-flex justify-content-center align-items-center">
-        <div class="col-md-8">
-          <form id="regForm1">
-            <div class="thanks-message text-center" id="text-message">
-              <h3>¡Muchas gracias por participar!</h3>
-              <p>Esperamos que te hayas divertido.</p>
-              <p>It helps us to improve our services!</p>
+      <!-- Modal Stadistics -->
+      <div class="btn-listar">
+        <button type="button" class="btn btn-info" id="txt-estadisticas" data-toggle="modal"
+          data-target="#exampleModal10">Ver Estadísticas</button>
+      </div>
+      <div class="modal fade" id="exampleModal10" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
             </div>
-          </form>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Modal Stadistics -->
+    </div>
+  </section>
+  <!-- ***** End Form ***** -->
+
+  <!-- Contact information -->
+  <section class="bg-cyan">
+    <div class="container">
+      <div class="title-section">
+        <h2> <strong>Información de contacto</strong></h2>
+      </div>
+      <div class="container2">
+        <div class="card">
+          <div class="face face1">
+            <div class="content">
+              <div class="icon">
+                <img src="./assets/images/social-mail.png" alt="social-mail" width="120">
+                <!-- <i class="fa fa-linkedin-square media-pic" aria-hidden="true"></i> -->
+              </div>
+            </div>
+          </div>
+          <div class="face face2">
+            <div class="content">
+              <h3>
+                <a href="mailto:srotaka@gmail.com" target="_blank">srotaka@gmail.com</a>
+              </h3>
+              <p>Siéntete libre de contactarme por cualquier inquietud.</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="face face1">
+            <div class="content">
+              <div class="icon">
+                <img src="./assets/images/social-linkedin.png" alt="social-linkedin" width="120">
+                <!-- <i class="fa fa-twitter-square" aria-hidden="true"></i> -->
+              </div>
+            </div>
+          </div>
+          <div class="face face2">
+            <div class="content">
+              <h3>
+                <a href="https://www.linkedin.com/in/silvia-raquel-otaka/"
+                  target="_blank">linkedin.com/in/silvia-raquel-otaka/</a>
+              </h3>
+              <p>Puedes encontrarme en LinkedIn.</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="face face1">
+            <div class="content">
+              <div class="icon">
+                <img src="./assets/images/social-github.png" alt="social-github" width="120">
+                <!-- <i class="fa fa-github-square" aria-hidden="true"></i> -->
+              </div>
+            </div>
+          </div>
+          <div class="face face2">
+            <div class="content">
+              <h3>
+                <a href="https://github.com/srotaka" target="_blank">github.com/srotaka</a>
+              </h3>
+              <p>Aquí puedes encontrar alguno de mis proyectos.</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-
   </section>
-  <!-- ***** End Form ***** -->
+  <!-- End Contact information -->
+
+
+  <!-- ***** Back to top button ***** -->
+  <button type="button" class="btn btn-floating btn-lg" id="btn-back-to-top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
 
   <!-- ***** Footer *****-->
   <footer id="footer">
@@ -560,7 +895,16 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous">
     </script>
-
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+    integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+    integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+    crossorigin="anonymous"></script>
+  <script src="./assets/js/back-to-top.js"></script>
 
 </body>
 

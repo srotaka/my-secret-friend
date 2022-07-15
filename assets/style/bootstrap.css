@@ -3098,12 +3098,12 @@ textarea.form-control-lg {
 }
 
 .btn-info {
-  color: #000;
+  color: rgb(255, 255, 255);
   background-color: #0dcaf0;
   border-color: #0dcaf0;
 }
 .btn-info:hover {
-  color: #000;
+  color: rgb(250, 250, 250);
   background-color: #31d2f2;
   border-color: #25cff2;
 }
@@ -3128,14 +3128,14 @@ textarea.form-control-lg {
 }
 
 .btn-warning {
-  color: #000;
-  background-color: #ffc107;
-  border-color: #ffc107;
+  color: #353535;
+  background-color: #fff700;
+  border-color: #e6de0e;
 }
 .btn-warning:hover {
-  color: #000;
-  background-color: #ffca2c;
-  border-color: #ffc720;
+  color: #353535;
+  background-color: #f3ec18;
+  border-color: #e6de0e;
 }
 .btn-check:focus + .btn-warning, .btn-warning:focus {
   color: #000;
@@ -6100,13 +6100,13 @@ textarea.form-control-lg {
   } ]
 } */
 .carousel-control-prev-icon {
-  background-image: url("../images/button-previous.png");
-  background-size: 150%;
+  background-image: url("../images/button-previous2.png");
+  background-size: 100%;
 }
 
 .carousel-control-next-icon {
-  background-image: url("../images/button-next.png");
-  background-size: 150%;
+  background-image: url("../images/button-next2.png");
+  background-size: 100%;
 }
 
 .carousel-indicators {

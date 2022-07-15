@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Secret Friend</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Rochester&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Besley&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+
+    <!-- Style -->
+    <link rel="stylesheet" href="./assets/style/bootstrap.css">
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <link rel="stylesheet" href="./assets/style/form-participants.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <!-- ***** Navbar ***** -->
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">My Secret Friend</a> <img src="./assets/images/letter.png" alt="letter"
+                width="40" height="40">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation" id="navbar-toggler-buttom">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html#de-que-se-trata">¿Qué es My Secret Friend?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#members">Participantes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html#cuestionario">Cuestionario</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <!-- <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li> -->
+
+                </ul>
+
+            </div>
+            <img src="./assets/images/calendar-01.png" alt="calendar" width="40" height="40"> &nbsp;&nbsp;&nbsp;
+            <span id="spanDate">today</span>
+        </div>
+    </nav>
+    <!-- ***** End Navbar ***** -->
+
+     <section class="form-participant-section">
+        <div class="title-section" id="titulo-participantes">
+            <h2> <strong>Participantes de <div class="my-brand"> My Secret Friend</div></strong></h2>
+        </div>
+        <div class="container">
+
+            <div class="wrapper">
+
+                <div class="inner">
+
+                    <form action="" method="POST">
+                        <h3>PARTICIPANTES</h3>
+
+                        <div class="form-group">
+
+                            <div class="form-wrapper">
+                                <label for="nombre">Nombre</label>
+                                <input type="text" class="form-control" placeholder="Nombre..." name="nombre" id="nombre" required>
+                               
+                            </div>
+                            <div class="form-wrapper">
+                                <label for="apellido">Apellido</label>
+                                <input type="text" class="form-control" placeholder="Apellido..." name="apellido" id="apellido" required>
+                               
+                            </div>
+                        </div>
+                        <div class="form-wrapper">
+                            <label for="datos">Algún dato interesante</label>
+                            <textarea class="form-control" name="datos" id="datos" required="required"></textarea>
+                        </div>
+
+
+                        <div class="btn-listar">
+                            <button type="submit" class="btn btn-info" id="txt-estadisticas">Registrar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section> 
+    <!-- <section class="form-participant-section">
+        <div class="title-section" id="titulo-participantes">
+            <h2> <strong>Participantes de <div class="my-brand"> My Secret Friend</div></strong></h2>
+        </div>
+        <div class="container">
+            <div class="wrapper">
+                <div class="inner">
+                    <form class="row g-3 needs-validation" novalidate>
+                        <h3>PARTICIPANTES</h3>
+                        <div class="form-group">
+                            <div class="form-wrapper">
+                        <div class="col-md-9">                            
+                            <label for="validationCustom01" class="form-label">Nombre</label>
+                            <input type="text" class="form-control"  placeholder="Nombre..." name="nombre" id="nombre" required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-wrapper">
+                        <div class="col-md-9">
+                            <label for="validationCustom02" class="form-label">Apellido</label>
+                            <input type="text" class="form-control" placeholder="Apellido..." name="apellido" id="apellido" required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="form-wrapper">
+                        <div class="col-md-11">
+                            <label for="validationCustom03" class="form-label">Algún dato intersante</label>
+                            <input type="text" class="form-control" id="validationCustom03" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid city.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-listar">
+                        <button type="submit" class="btn btn-info" id="txt-estadisticas">Registrar</button>
+                    </div>
+                        <div class="col-12">
+                            <button class="btn btn-info" type="submit" id="txt-estadisticas">Submit form</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+
+
+
+
+
+    <!-- **** Tabla participantes **** -->
+    <section class="agenda">
+        <ul id="thead">
+            <li>Nº</li>
+            <li>Nombre</li>
+            <li>Info</li>
+        </ul>
+        <div id="contactos">
+
+        </div>
+
+
+    </section>
+
+    <!-- **** End tabla **** -->
+
+    <!-- ***** Footer *****-->
+    <footer id="footer2">
+        <div class="container">
+            <div class="copyright text-center">
+                &copy; Copyright 2021-2022 |
+                <strong><span>Silvia Otaka</span></strong> | Programming with ❤ <br />
+            </div>
+        </div>
+    </footer>
+    <!-- ***** End Footer ***** -->
+
+
+    <!-- ***** JS Scripts ***** -->
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/bootstrap.bundle.js"></script>
+    <script src="./assets/js/previous-next.js"></script>
+    <script src="./assets/js/todayDate.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="./assets/js/registro.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous">
+        </script>
+<!-- 
+    <script>
+        (function () {
+            'use strict'
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.prototype.slice.call(forms)
+                .forEach(function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (!form.checkValidity()) {
+                            event.preventDefault()
+                            event.stopPropagation()
+                        }
+
+                        form.classList.add('was-validated')
+                    }, false)
+                })
+        })()
+    </script> -->
+</body>
+
+</html>
